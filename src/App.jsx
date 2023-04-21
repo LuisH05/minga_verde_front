@@ -6,7 +6,6 @@ import flecha1 from "./assets/image/flecha1.png"
 import flecha2 from "./assets/image/flecha2.png"
 import footer from "./assets/image/bf footer.png"
 import redes from "./assets/image/redes.png"
-import linea from "./assets/image/linia.png"
 import './App.css'
 
 function App() {
@@ -14,41 +13,53 @@ function App() {
   return (
     <>
     <header>
-    <nav className="w-full flex justify-between items-center mx-auto px-8 ">
-      <img src={menu} className="w-[2rem]"/>
-      <img src={logo} className="w-[3rem]"/>
+    <nav className="w-full flex justify-between items-center mx-auto px-8 m-8">
+      <img src={menu} className="w-[3rem]"/>
+      <img src={logo} className="w-[5rem]"/>
     </nav>
 
-    <div className="flex justify-between items-end  w-full h-[17rem] bg-gradient-to-l from-pink-400 via-pink-400 to-pink-300 my-10">
+    <div className="flex justify-between items-end  w-[100%] h-[18rem] bg-gradient-to-l from-pink-400 via-pink-400 to-pink-300 my-20 mx-[rem]">
 
-    <div className="w-12 h-72 flex items-center">
-      <img src={flecha1} className=""/>
+    <div className=" absolute w-[100%] flex content-center my-28 justify-between">
+      <img src={flecha1} className="w-[3rem]"/>
+      <img src={flecha2} className="w-[3rem]"/>
     </div>
-    <div className="w-[20rem]">
-    <img src={naruto} className="w-[17rem] h-auto "/>
+    <div className="w-[100%] h-[150%] flex">
+
+    <div className="w-[50%]">
+    <img src={naruto} className="w-auto h-[80%] my-20 "/>
     </div>
 
-    <div className="w-[20rem]">
-    <img src={portada} className="w-[12rem] h-auto mb-5"/>
+    <div className="w-[50%]">
+    <img src={portada} className="w-auto h-[78%] my-16 "/>
+    </div>
     </div>
 
-    <div className="h-48 w-72 ">
-    <h4 className="text-white text-2xl text-start">Shonen</h4>
-    <p className="text-white text-sm text-justify ">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
+    <div className="h-[70%] w-[90%] ">
+    <h4 className="text-white text-2xl text-start w-[50%] h-[2rem] ">Shonen</h4>
+    <p className="text-white text-sm text-justify w-[60%]  ">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
     </div>
-    <div className="w-12 h-72 flex items-center">
-      <img src={flecha2} className=""/>
-    </div>
+
     </div>
     </header>
 
+    <div className="bg-[url(/src/assets/image/bg-main.png)] bg-no-repeat bg-cover bg-center w-fill h-[551px] rounded-md mt-[3%] flex flex-col justify-center items-start pl-[10%] gap-[15px] p-0 ">
+            <h2 className="not-italic font-bold text-[64px] leading-[95.19%] text-white text-shadow: 1px 8px 50px rgba(255, 255, 255, 0.25)">Live the emotion of the manga</h2>
+            <p className="font-normal text-2xl leading-[95.19%] text-white">Find the perfect manga for you</p>
+            <span className="not-italic font-semibold text-base leading-[95.19%] text-white">#MingaForever 🔥</span>
+            <button className="text-white not-italic font-medium text-2xl leading-[95.19%] bg-gradient-to-r from-btn1 from-(-13.9%) to-btn2 to-58.69% rounded-md flex flex-row justify-center items-center gap-2.5 w-60 h-[55px] p-4">Sign In!</button>
+    </div>
 
-    <footer className="w-100 h-auto justify-center items-center">
+
+
+
+
+    <footer className="w-100 h-auto justify-center items-center m-8">
     <div>
       <img src={footer} className=""/>
     </div>
 
-    <div className="flex justify-around items-center h-32 w-100">
+    <div className="flex justify-around items-center h-32 w-[100%]">
     <div className="flex gap-20">
       <h5 >Home</h5>
       <h5>Mangas</h5>
@@ -60,7 +71,7 @@ function App() {
     <img src={redes} className="w-56"/>
     </div>
     </div>
-    <div className="border-b border-gray-400 w-100 items-center">
+    <div className="border-b border-gray-400 w-[80%] items-center m-auto">
   
     </div> 
     </footer>
