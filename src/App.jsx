@@ -46,8 +46,8 @@ function App() {
     <div className="bg-[url(/src/assets/image/bg-main.png)] bg-no-repeat bg-cover bg-center w-fill h-[551px] rounded-md mt-[3%] flex flex-col justify-center items-start pl-[10%] gap-[15px] p-0 ">
             <h2 className="not-italic font-bold text-[64px] leading-[95.19%] text-white text-shadow: 1px 8px 50px rgba(255, 255, 255, 0.25)">Live the emotion of the manga</h2>
             <p className="font-normal text-2xl leading-[95.19%] text-white">Find the perfect manga for you</p>
-            <span className="not-italic font-semibold text-base leading-[95.19%] text-white">#MingaForever 🔥</span>
-            <button className="text-white not-italic font-medium text-2xl leading-[95.19%] bg-gradient-to-r from-btn1 from-(-13.9%) to-btn2 to-58.69% rounded-md flex flex-row justify-center items-center gap-2.5 w-60 h-[55px] p-4">Sign In!</button>
+            <span className="not-italic font-semibold text-base leading-[95.18%] text-white">#MingaForever 🔥</span>
+            <button className="text-white not-italic font-medium text-2xl leading-[95.19%] bg-gradient-to-r from-btn1 from-(-13.10%) to-btn2 to-58.69% rounded-md flex flex-row justify-center items-center gap-2.5 w-60 h-[55px] p-4">Sign In!</button>
     </div>
 
 
