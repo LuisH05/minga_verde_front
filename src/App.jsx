@@ -6,6 +6,7 @@ import flecha1 from "./assets/image/flecha1.png"
 import flecha2 from "./assets/image/flecha2.png"
 import footer from "./assets/image/bf footer.png"
 import redes from "./assets/image/redes.png"
+
 import './App.css'
 import apiUrl from "../api"
 
@@ -39,6 +40,7 @@ console.log(process.env.NODE_ENV);
     <div className="h-[70%] w-[90%] ml-101111111">
     <h4 className="text-white text-2xl text-start w-[50%] pl-4">Shonen</h4>
     <p className="text-white text-sm text-justify w-[70%] pl-4">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
+
     </div>
     </div>
     </header>
@@ -55,6 +57,7 @@ console.log(process.env.NODE_ENV);
       <img src={footer} className="w-[100%]"/>
     </div>
     <div className="flex justify-around items-center h-32 w-[100%]">
+
     <div className="flex gap-20">
       <h5 >Home</h5>
       <h5>Mangas</h5>
@@ -66,6 +69,7 @@ console.log(process.env.NODE_ENV);
     <img src={redes} className="w-56"/>
     </div>
     </div>
+
     <div className="border-b border-gray-400 w-[80%] items-center m-auto">
   
     </div> 
@@ -97,6 +101,7 @@ console.log(process.env.NODE_ENV);
         </div>
       </div>
     </div>
+
     </>
   )
 }
@@ -123,3 +128,4 @@ export default App
                     </svg>
         </button>
       </div> */}
+
