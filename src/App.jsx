@@ -1,7 +1,8 @@
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Carousel from "./components/Carousel"
-import Index from "."
+import Index from "./pages/Index"
+
 import logo from "./assets/image/logo-minga.png"
 import './App.css'
 import apiUrl from "../api"
@@ -13,6 +14,7 @@ console.log(process.env.NODE_ENV);
     <>
     
     <header className="mx-8">
+
     
     <Navbar />
     <Carousel />
@@ -74,3 +76,4 @@ export default App
                     </svg>
         </button>
       </div> */}
+
