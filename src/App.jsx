@@ -6,7 +6,6 @@ import flecha1 from "./assets/image/flecha1.png"
 import flecha2 from "./assets/image/flecha2.png"
 import footer from "./assets/image/bf footer.png"
 import redes from "./assets/image/redes.png"
-
 import './App.css'
 import apiUrl from "../api"
 
@@ -15,14 +14,12 @@ console.log(apiUrl);
 console.log(process.env.NODE_ENV);
   return (
     <>
-
+    
     <header className="mx-10">
     <nav className="w-full flex justify-between items-center xsm:hidden mt-10">
-
       <img src={menu} className="w-[3rem]"/>
       <img src={logo} className="w-[4rem]"/>
     </nav>
-
 
     <div className="flex justify-between items-center w-full h-[16rem] bg-gradient-to-l from-pink-400 via-pink-400 to-pink-300 my-8 rounded-md xsm:hidden ">
 
@@ -39,19 +36,12 @@ console.log(process.env.NODE_ENV);
       <div className="w-[50%]">
         <img src={portada} className="w-auto h-[75%] my-3 "/>
       </div>
-
     </div>
-    </div>
-
-    <div className="h-[70%] w-[90%] ml-101111111">
-    <h4 className="text-white text-2xl text-start w-[50%] pl-4">Shonen</h4>
-    <p className="text-white text-sm text-justify w-[70%] pl-4">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
 
       <div className="h-auto w-[90%] ml-10">
         <h4 className="text-white text-2xl text-start w-[50%] pl-2">Shonen</h4>
         <p className="text-white text-sm text-justify w-[60%] pl-2 ">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
       </div>
-    </div>
     </div>
     </header>
     
@@ -63,12 +53,10 @@ console.log(process.env.NODE_ENV);
     </div>
 
     <footer className="w-auto my-8 xsm:hidden mx-10">
-
     <div className="">
       <img src={footer} className="w-[100%]"/>
     </div>
     <div className="flex justify-around items-center h-32 w-[100%]">
-
     <div className="flex gap-20">
       <h5 >Home</h5>
       <h5>Mangas</h5>
@@ -80,7 +68,6 @@ console.log(process.env.NODE_ENV);
     <img src={redes} className="w-56"/>
     </div>
     </div>
-
     <div className="border-b border-gray-400 w-[80%] items-center m-auto">
   
     </div> 
@@ -88,10 +75,8 @@ console.log(process.env.NODE_ENV);
 
 
     {/* //mobile */}
-
     <div className="flex justify-center xsm:h-full">
       <div className="xsm:bg-[url(/src/assets/image/bg-mobile.png)] xsm:w-full xsm:h-screen xsm:bg-cover md:hidden">
-
         <div className="flex justify-center items-center h-20">
         <div className="flex w-full mx-4 justify-between">
         <div className="flex items-center">
@@ -100,9 +85,7 @@ console.log(process.env.NODE_ENV);
               </svg>
         </div>
         <div>
-
           <img src={logo} className="xsm:w-12 "/>
-
         </div>
         </div>
         </div>
@@ -111,14 +94,11 @@ console.log(process.env.NODE_ENV);
         <h1 className="text-white xsm: text-4xl xsm:text-center xsm:font-bold">Live the emotion of the manga</h1>
         <h3 className="text-white xsm: self-center xsm:text-base xsm:mb-2 p-3">Find the perfect manga for you</h3>
         <div className="xsm: self-center">
-
           <button className="rounded-3xl text-white bg-gradient-to-b from-[#F9A8D4] to-[#F472B6] h-10 w-64 " >Explore</button>
-
         </div>
         </div>
       </div>
     </div>
-
     </>
   )
 }
@@ -144,6 +124,4 @@ export default App
                       />
                     </svg>
         </button>
-
       </div> */}
-
