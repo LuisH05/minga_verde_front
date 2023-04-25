@@ -75,7 +75,6 @@ console.log(process.env.NODE_ENV);
     </div> 
     </footer>
 
-
     {/* //mobile */}
     <div className="flex justify-center xsm:h-full">
       <div className="xsm:bg-[url(/src/assets/image/bg-mobile.png)] xsm:w-full xsm:h-screen xsm:bg-cover md:hidden">
