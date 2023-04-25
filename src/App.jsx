@@ -43,10 +43,8 @@ console.log(process.env.NODE_ENV);
         <p className="text-white text-sm text-justify w-[60%] pl-2 ">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
       </div>
     </div>
-
     </header>
-
-
+    
     <div className="bg-[url(/src/assets/image/bg-main.png)] bg-no-repeat bg-cover bg-center w-fill h-[500px] rounded-md mt-[1] flex flex-col justify-center items-start pl-[10%] gap-[10px] p-0 xsm:hidden mx-10">
             <h2 className="not-italic font-bold text-[64px] leading-[95.19%] text-white text-shadow: 1px 8px 50px rgba(255, 255, 255, 0.25)">Live the emotion of the manga</h2>
             <p className="font-normal text-2xl leading-[95.19%] text-white">Find the perfect manga for you</p>
