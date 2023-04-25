@@ -1,8 +1,5 @@
-import Footer from "./components/Footer"
-import Navbar from "./components/Navbar"
-import Carousel from "./components/Carousel"
+import Main from "./layouts/Main"
 import Index from "./pages/Index"
-
 import logo from "./assets/image/logo-minga.png"
 import './App.css'
 import apiUrl from "../api"
@@ -12,19 +9,9 @@ console.log(apiUrl);
 console.log(process.env.NODE_ENV);
   return (
     <>
-    
-    <header className="mx-8">
-
-    
-    <Navbar />
-    <Carousel />
-
-    </header>
-
-    <Index />
-
-    <Footer />
-
+    <Main>
+      <Index />
+    </Main>
 
     {/* //mobile */}
     <div className="flex justify-center xsm:h-full">
@@ -76,4 +63,3 @@ export default App
                     </svg>
         </button>
       </div> */}
-
