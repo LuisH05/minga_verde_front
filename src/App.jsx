@@ -1,11 +1,8 @@
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
+import Carousel from "./components/Carousel"
+import Index from "."
 import logo from "./assets/image/logo-minga.png"
-import menu from "./assets/image/menu-hamburguesa.png"
-import naruto from "./assets/image/imagen1.png"
-import portada from "./assets/image/image 2.png"
-import flecha1 from "./assets/image/flecha1.png"
-import flecha2 from "./assets/image/flecha2.png"
-import footer from "./assets/image/bf footer.png"
-import redes from "./assets/image/redes.png"
 import './App.css'
 import apiUrl from "../api"
 
@@ -15,63 +12,16 @@ console.log(process.env.NODE_ENV);
   return (
     <>
     
-    <header className="mx-10">
-    <nav className="w-full flex justify-between items-center xsm:hidden mt-10">
-      <img src={menu} className="w-[3rem]"/>
-      <img src={logo} className="w-[4rem]"/>
-    </nav>
-
-    <div className="flex justify-between items-center w-full h-[16rem] bg-gradient-to-l from-pink-400 via-pink-400 to-pink-300 my-8 rounded-md xsm:hidden ">
-
-      <div className='absolute w-[90%] flex content-center my-28 justify-between ' >
-        <img src={flecha1} className="w-[3rem]" />
-        <img src={flecha2} className="w-[3rem]"/>
-      </div>
-
-
-    <div className="w-[100%] h-[22rem] flex">
-      <div className="w-[50%]">
-        <img src={naruto} className="w-auto h-[80%] my-4 "/>
-      </div>
-      <div className="w-[50%]">
-        <img src={portada} className="w-auto h-[75%] my-3 "/>
-      </div>
-    </div>
-
-      <div className="h-auto w-[90%] ml-10">
-        <h4 className="text-white text-2xl text-start w-[50%] pl-2">Shonen</h4>
-        <p className="text-white text-sm text-justify w-[60%] pl-2 ">Is the manga that is aimed at adolescent boys. They are series with large amounts of action, in which humorous situations often occur. The camaraderie between members of a collective or a combat team stands out.</p>
-      </div>
-    </div>
-    </header>
+    <header className="mx-8">
     
-    <div className="bg-[url(/src/assets/image/bg-main.png)] bg-no-repeat bg-cover bg-center w-fill h-[500px] rounded-md mt-[1] flex flex-col justify-center items-start pl-[10%] gap-[10px] p-0 xsm:hidden mx-10">
-            <h2 className="not-italic font-bold text-[64px] leading-[95.19%] text-white text-shadow: 1px 8px 50px rgba(255, 255, 255, 0.25)">Live the emotion of the manga</h2>
-            <p className="font-normal text-2xl leading-[95.19%] text-white">Find the perfect manga for you</p>
-            <span className="not-italic font-semibold text-base leading-[95.18%] text-white">#MingaForever 🔥</span>
-            <button className="text-white not-italic font-medium text-2xl leading-[95.19%] bg-gradient-to-r from-btn1 from-(-13.10%) to-btn2 to-58.69% rounded-md flex flex-row justify-center items-center gap-2.5 w-60 h-[55px] p-4">Sign In!</button>
-    </div>
+    <Navbar />
+    <Carousel />
 
-    <footer className="w-auto my-8 xsm:hidden mx-10">
-    <div className="">
-      <img src={footer} className="w-[100%]"/>
-    </div>
-    <div className="flex justify-around items-center h-32 w-[100%]">
-    <div className="flex gap-20">
-      <h5 >Home</h5>
-      <h5>Mangas</h5>
-    </div>
-    <div className="">
-    <img src={logo} className="w-[3rem]"/>
-    </div>
-    <div className="">
-    <img src={redes} className="w-56"/>
-    </div>
-    </div>
-    <div className="border-b border-gray-400 w-[80%] items-center m-auto">
-  
-    </div> 
-    </footer>
+    </header>
+
+    <Index />
+
+    <Footer />
 
 
     {/* //mobile */}
@@ -104,7 +54,6 @@ console.log(process.env.NODE_ENV);
 }
 
 export default App
-
 
 {/* <div>
         <button className="text-white not-italic font-medium text-2xl leading-[95.19%] bg-gradient-to-r from-btn1 from-(-13.9%) to-btn2 to-58.69% rounded-md flex flex-row justify-center items-center gap-2.5 w-60 h-[55px] p-4">
