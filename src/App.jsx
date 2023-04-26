@@ -1,12 +1,16 @@
 import Main from "./layouts/Main"
 import Index from "./pages/Index"
-import logo from "./assets/image/logo-minga.png"
 import './App.css'
 import apiUrl from "../api"
+import Navbarmobile from "./components/Navbarmobile"
+import Footermobile from "./components/Footermobile"
+import Indexmobile from "./components/Indexmobile"
+
 
 function App() {
 console.log(apiUrl);
 console.log(process.env.NODE_ENV);
+
   return (
     <>
     <Main>
@@ -16,26 +20,9 @@ console.log(process.env.NODE_ENV);
     {/* //mobile */}
     <div className="flex justify-center xsm:h-full">
       <div className="xsm:bg-[url(/src/assets/image/bg-mobile.png)] xsm:w-full xsm:h-screen xsm:bg-cover md:hidden">
-        <div className="flex justify-center items-center h-20">
-        <div className="flex w-full mx-4 justify-between">
-        <div className="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F472B6" className="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-        </div>
-        <div>
-          <img src={logo} className="xsm:w-12 "/>
-        </div>
-        </div>
-        </div>
-
-        <div className="xsm: flex xsm: mt-40 xsm: flex-col">
-        <h1 className="text-white xsm: text-4xl xsm:text-center xsm:font-bold">Live the emotion of the manga</h1>
-        <h3 className="text-white xsm: self-center xsm:text-base xsm:mb-2 p-3">Find the perfect manga for you</h3>
-        <div className="xsm: self-center">
-          <button className="rounded-3xl text-white bg-gradient-to-b from-[#F9A8D4] to-[#F472B6] h-10 w-64 " >Explore</button>
-        </div>
-        </div>
+        <Navbarmobile />
+          <Indexmobile />
+        <Footermobile />
       </div>
     </div>
     </>
@@ -62,4 +49,4 @@ export default App
                       />
                     </svg>
         </button>
-      </div> */}
+</div> */}
